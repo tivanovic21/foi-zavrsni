@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">zavrsniSSO</string>
+    <string name="default_web_client_id">241995436321-19a7elnq3gg4lv4rcdbnnmlcfdhhfrm7.apps.googleusercontent.com</string>
 </resources>
