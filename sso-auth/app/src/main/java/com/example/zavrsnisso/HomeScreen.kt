@@ -1,7 +1,5 @@
 package com.example.zavrsnisso
 
-import android.content.Context
-import android.net.Uri
 import coil.compose.AsyncImage
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -28,7 +26,7 @@ import androidx.compose.ui.unit.sp
 import coil.request.ImageRequest
 
 @Composable
-fun HomeScreen(modifier: Modifier = Modifier, currentGoogleUser:CurrentGoogleUser?, onSignOutClick: () -> Unit) {
+fun HomeScreen(modifier: Modifier = Modifier, currentGoogleUser:CurrentUser?, onSignOutClick: () -> Unit) {
     val textStyle = TextStyle(
         fontFamily = FontFamily.Monospace,
         fontWeight = FontWeight.Medium,
@@ -69,7 +67,7 @@ fun HomeScreen(modifier: Modifier = Modifier, currentGoogleUser:CurrentGoogleUse
                     )
                     Spacer(modifier = Modifier.size(16.dp))
                 }
-                user.googleIdToken?.let { idToken ->
+                user.idToken?.let { idToken ->
                     Text(
                         text = "IdToken: " + idToken,
                         style = textStyle,

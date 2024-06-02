@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -21,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun LoginScreen(modifier: Modifier = Modifier, onGoogleSignInClick: () -> Unit) {
+fun LoginScreen(modifier: Modifier = Modifier, onGoogleSignInClick: () -> Unit, onFacebookSignInClick: () -> Unit) {
     Surface(
         modifier = modifier.fillMaxSize()
     ) {
@@ -40,6 +39,18 @@ fun LoginScreen(modifier: Modifier = Modifier, onGoogleSignInClick: () -> Unit) 
             ){
                 Text(
                     text = "Continue with Google",
+                    fontFamily = FontFamily.Monospace,
+                    fontWeight = FontWeight.SemiBold,
+                    fontSize = 20.sp
+                )
+            }
+            Spacer(modifier = Modifier.height(16.dp))
+            Button(
+                onClick = { onFacebookSignInClick() },
+                modifier = Modifier.fillMaxWidth()
+            ){
+                Text(
+                    text = "Continue with Facebook",
                     fontFamily = FontFamily.Monospace,
                     fontWeight = FontWeight.SemiBold,
                     fontSize = 20.sp

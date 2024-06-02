@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">zavrsniSSO</string>
     <string name="default_web_client_id">241995436321-19a7elnq3gg4lv4rcdbnnmlcfdhhfrm7.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">771332068318283</string>
+    <string name="facebook_client_token">51aacc73a285785009deef0b8e0224cd</string>
+    <string name="fb_login_protocol_scheme">fb771332068318283</string>
 </resources>
