@@ -10,9 +10,4 @@ Repozitorij je podijeljen na tri primarne sekcije od kojih svaka odgovara jednoj
 ## Firebase-auth
 
 Ova sekcija sadrži izvorni kod specifično za implementaciju Firebase Authentication tehnologije u Android aplikaciju.<br>
-U aplikaciju se je moguće prijaviti koristeći `tivanovic21@student.foi.hr | firebase1` podatke, kreirajući novi račun ili prijavom putem Google računa.
-
-## SSO-auth
-
-Ova sekcija sadrži izvorni kod specifično za implementaciju Google Sign-in i Facebook login tehnologija u Android aplikaciju.<br>
-U aplikaciju se je moguće prijaviti putem vlastitog Google ili Facebook računa. 
+U aplikaciju se je moguće prijaviti koristeći `tivanovic21@student.foi.hr | firebase1` podatke ili kreirajući novi račun.
